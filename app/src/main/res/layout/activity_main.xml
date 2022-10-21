@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,35 +20,47 @@
             android:orientation="vertical">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/buttonBounce"
-                android:text="Bounce"/>
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Bounce"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/buttonFadeIn"
-                android:text="Fade in"/>
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Fade in"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/buttonFadeOut"
-                android:text="Fade out"/>
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Fade out"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/buttonRotate"
-                android:text="Rotate"/>
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Rotate"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/buttonZoomIn"
-                android:text="Zoom in"/>
-            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Zoom in"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/buttonZoomOut"
-                android:text="Zoom out"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zoom out"
+                android:textAllCaps="false" />
+
 
         </LinearLayout>
 
@@ -59,45 +71,75 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textViewBounce"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Bounce"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
+
             <TextView
+                android:id="@+id/textViewFadeIn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Fade in"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
+
             <TextView
+                android:id="@+id/textViewFadeOut"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Fade out"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
+
             <TextView
+                android:id="@+id/textViewRotate"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Rotate"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
+
             <TextView
+                android:id="@+id/textViewZoomIn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Zoom in"
-                android:textAlignment="center"/>
+                android:gravity="center"
+                android:text="Zoom In"
+                android:textAlignment="center" />
+
             <TextView
+                android:id="@+id/textViewZoomOut"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Zoom out"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
 
 
         </LinearLayout>
+
     </LinearLayout>
 
+    <Button
+        android:id="@+id/buttonFrameAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame animation"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_anim"
+        android:id="@+id/imageViewFrameAnim"/>
 
 </LinearLayout>
